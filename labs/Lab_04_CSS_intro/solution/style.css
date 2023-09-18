@@ -1,0 +1,54 @@
+/* сброс дефолтных настроек css стилей для всех тегов, в том числе h1-h6*/
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+h1,h2,h3{
+    color: white;
+}
+
+.container{
+    padding-top: 5px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.text__block{
+    margin-bottom: 5px;
+    text-align: center;
+    height: 500px;
+    background-color: rgb(34, 7, 155);
+    border-radius: 10px;
+    box-shadow:5px 5px 5px black;;
+}
+
+.text__title{
+    padding-top: 45px;
+}
+
+.text__subtitle{
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+
+.img__computer{
+    margin-bottom: 80px;
+}
+
+
+
+.text__signature{
+    font-size: 16px;
+    font-family: 'Inter',sans-serif;
+    font-weight: normal;
+    line-height: 1.1;
+}
