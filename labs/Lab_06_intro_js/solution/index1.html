@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №6</title>
+</head>
+<body>
+    <script>
+        let apple = 10;
+        alert(apple)
+        console.log(apple)
+        let alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+        let rs = "";
+        while (rs.length < 6) {
+            rs += alphabet[Math.floor(Math.random() * alphabet.length)];
+        }
+        console.log('Good game is ' + rs);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №6</title>
+</head>
+<body>
+    <script>
+        function getRandomNumber() {
+            return Math.random();
+        }
+
+        console.log('Случайное число:', getRandomNumber());
+
+        function multiplyArrayByNumber(arr, number) {
+            return arr.map((element) => element * number);
+        }
+
+        const myArray = [1, 2, 3, 4, 5];
+        const multipliedArray = multiplyArrayByNumber(myArray, 10);
+        console.log('Исходный массив:', myArray);
+        console.log('Умноженный массив:', multipliedArray);
+
+        const generateRandomWord = function() {
+            const words = ['apple', 'banana', 'orange', 'grape', 'watermelon'];
+            const randomIndex = Math.floor(Math.random() * words.length);
+            return words[randomIndex];
+        };
+
+        console.log('Случайное слово:', generateRandomWord());
+
+    </script>
+</body>
+</html>

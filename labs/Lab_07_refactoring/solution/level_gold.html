@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №7</title>
+</head>
+<body>
+    <script>
+        let number_people = prompt('Введите кол-во человек ', undefined);
+
+        while (isNaN(parseInt(number_people))) {
+            number_people = prompt('Введите кол-во человек ', undefined);
+        }
+
+        number_people = parseFloat(number_people);
+
+        let price = prompt('Введите зарплату на человека ', undefined);
+
+        while (isNaN(parseFloat(price))) {
+            price = prompt('Введите зарплату на человека ', undefined);
+        }
+
+        price = parseFloat(price);
+
+        alert('Затраты на ЗП: ' + number_people*price);
+    </script>
+</body>
+</html>

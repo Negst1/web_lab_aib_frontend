@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-column-gap: 20px;
+}
+  
+.add-post {
+    display: inline-block;
+    margin: 150px;
+}
+  
+.posts {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+  
+.tags {
+    grid-column: 3;
+}
+  
+.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .post button {
+    margin-top: 10px;
+  }
+  

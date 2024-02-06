@@ -1,0 +1,33 @@
+.fullDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 300%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -15%;
+}
+
+.counter {
+    font-size: 120%;
+    position: relative;
+    top: 10vh;
+}
+
+.button_increment {
+    font-size: 60%;
+    position: relative;
+    top: 20vh;
+    margin-right: 5px;
+    border-radius: 8%;
+}
+
+.button_decriment {
+    font-size: 60%;
+    position: relative;
+    top: 20vh;
+    margin-right: 5px;
+    border-radius: 8%;
+}

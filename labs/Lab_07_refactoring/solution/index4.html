@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №7</title>
+</head>
+<body>
+    <script>
+        let students = [{FIO : 'Петров А.А.', estimation : 5},
+                                {FIO : 'Иванов Б.Б.', estimation : 3.4},
+                                {FIO : 'Сидоров Г.Г.', estimation : 9},
+                                {FIO : 'Немолодой Д.Д', estimation : 2},
+                                {FIO : 'Молодой Е.Е', estimation : 3.4}];
+
+        let average_score= 0;
+        let count = 0;
+        let badStudents = [];
+
+        for(let i = 0; i < students.length; i++)
+        {
+            if (students[i].estimation > 5 || students[i].estimation < 0) {
+                console.log('Это значение учитываться не будет оно не соответствует допустимым значениям');
+                continue;
+            }
+            else if(students[i].estimation < 4) {
+                badStudents.push(students[i]);
+            }
+
+            average_score += students[i].estimation;
+            count++;
+        }
+
+        console.log('Средняя оценка: ' + average_score/count);
+
+        console.log('Плохие студенты:');
+        if(badStudents.length === 0 ) {
+            console.log('Таких нет');
+        }
+        else {
+            badStudents.forEach((student) => {
+                console.log('ФИО: ' + student.FIO + '; Оценка: ' + student.estimation);
+            });
+        }
+    </script>
+</body>
+</html>
